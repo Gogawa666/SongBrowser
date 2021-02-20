@@ -18,7 +18,20 @@ struct ContentView: View {
         
         VStack {
             
-            SearchBarView(text: $searchText)
+            // Show a prompt when no search bar to the top
+            if searchText.isEmpty {
+                
+                Spacer()
+                
+                Text("Please enter an artist name")
+                    .font(.title)
+                    .foregroundColor(.secondary)
+                
+                Spacer()
+                
+            } else {
+                
+          
             
             // Push the search bar to the top
             Spacer()
@@ -34,4 +47,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
 }

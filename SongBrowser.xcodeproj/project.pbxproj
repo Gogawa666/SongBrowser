@@ -12,6 +12,8 @@
 		BE678C0925E15A8B001D9A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE678C0825E15A8B001D9A9D /* Assets.xcassets */; };
 		BE678C0C25E15A8B001D9A9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE678C0B25E15A8B001D9A9D /* Preview Assets.xcassets */; };
 		BE678C1525E15B55001D9A9D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE678C1425E15B55001D9A9D /* SearchBarView.swift */; };
+		BE9E420125E15FB4007F0242 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E420025E15FB4007F0242 /* Song.swift */; };
+		BE9E420625E1603A007F0242 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E420525E1603A007F0242 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BE678C0B25E15A8B001D9A9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE678C0D25E15A8B001D9A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE678C1425E15B55001D9A9D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		BE9E420025E15FB4007F0242 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		BE9E420525E1603A007F0242 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,12 @@
 		BE678C0325E15A87001D9A9D /* SongBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				BE9E420425E15FC4007F0242 /* Views */,
+				BE9E41FF25E15F95007F0242 /* Model */,
 				BE678C0425E15A87001D9A9D /* SongBrowserApp.swift */,
-				BE678C0625E15A87001D9A9D /* ContentView.swift */,
 				BE678C0825E15A8B001D9A9D /* Assets.xcassets */,
 				BE678C0D25E15A8B001D9A9D /* Info.plist */,
 				BE678C0A25E15A8B001D9A9D /* Preview Content */,
-				BE678C1425E15B55001D9A9D /* SearchBarView.swift */,
 			);
 			path = SongBrowser;
 			sourceTree = "<group>";
@@ -70,6 +74,24 @@
 				BE678C0B25E15A8B001D9A9D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE9E41FF25E15F95007F0242 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E420025E15FB4007F0242 /* Song.swift */,
+				BE9E420525E1603A007F0242 /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE9E420425E15FC4007F0242 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE678C1425E15B55001D9A9D /* SearchBarView.swift */,
+				BE678C0625E15A87001D9A9D /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9E420125E15FB4007F0242 /* Song.swift in Sources */,
 				BE678C0725E15A87001D9A9D /* ContentView.swift in Sources */,
+				BE9E420625E1603A007F0242 /* SearchResult.swift in Sources */,
 				BE678C1525E15B55001D9A9D /* SearchBarView.swift in Sources */,
 				BE678C0525E15A87001D9A9D /* SongBrowserApp.swift in Sources */,
 			);
