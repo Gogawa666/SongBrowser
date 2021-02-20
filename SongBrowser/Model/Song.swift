@@ -10,9 +10,9 @@ import Foundation
 struct Song: Decodable {
     
     let trackId: Int
-        let artistName: String
-        let trackName: String
-        let previewUrl: String
-        let artworkUrl100: String
+    let artistName: String
+    let trackName: String
+    let previewUrl: String
+    let artworkUrl100: String
     
 }
